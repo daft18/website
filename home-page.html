@@ -19,24 +19,42 @@ body {
 	
 }
 
-h1,h2 {
+.pagetitle,.greeting {
     color: yellow;
     text-align: left;
     margin-left: 2%;
     font-family: "Orbitron", sans-serif;
 }
 
-h2 {
-    font-size: 16px;
-  
- }
+
+.pagetitle {
+    font-size: 3.6vh;
+    margin-top: 1.5%;
+}
+
+.greeting {
+    font-size: 2.5vh;
+}
+
+
+.pagetitle:hover, .greeting:hover {
+    font-size: 110%;
+}
 
 </style>
 </head>
+
 <body>
 
-<h1>Plot's Synposis</h1>
-<h2>Greetings. I'm David. </h2>
+<section class="container">
+   <div class="pagetitle">
+      <h1>Plot's Synposis</h1>
+   </div>
+
+   <div class="greeting">
+      <h2>Greetings. I'm David.</h2>
+   </div>
+</section>
 
 </body>
 </html>
