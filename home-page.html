@@ -2,47 +2,93 @@
 <html>
 
 	<head>
+
+		<title>Daft</title>
+		<!-- Favicon will be fursona when it arrives-->
+
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
 
-
-
 		<style>
 
-			*{
+			* {
 				color: yellow;
 				font-family: "Orbitron", sans-serif; 
+				overflow-wrap: normal;
 			}
 			
+			ul {
+ 				list-style-type: none;
+				
+  				padding: 0;
+				display: inline;
+			}
+
+			li {
+				margin-left: 2%;
+				margin-top: 2%;
+			}
+
+			li a {
+  				display: block;
+				padding: 8px;
+				width: 80px;
+				font-size: 14 px;
+				border: solid yellow 3px;
+				border-radius: 10px;
+				padding: 5px;
+				background-color: black;
+			}
+
+			a:hover {
+				letter-spacing: 1px;
+			}
+							
 			body {
 				background-image: url("https://wallpaper.dog/large/5525605.jpg");
-				background-size: 100% 100%;
 				background-repeat: no-repeat;
 				background-attachment: fixed;
-				font-family: "Orbitron";
+ 				background-position: center; /* Center the image */
+ 				background-size: cover; /* Resize the background image to cover the entire container */
+		
+				
 			}
 	
 				
 			
 			.pagetitlediv,.greetingdiv {
-			    text-align: left;
-			    margin-left: 2%;
-			    
+			  	text-align: left;
+			        margin-left: 2%;
+			      
 			}
 				
 			.pagetitlediv {
-			    font-size: 3.6vh;
-			    margin-top: 1.5%;
+			        font-size: 52px;
+			        margin-top: 1.5%;
 			}
 			
 			.greetingdiv {
-			    font-size: 2.5vh;
+			        font-size: 18px;
+				font-style: italic;
 			}
 			
+			.pagetitlediv, .greetingdiv {
+				
+				
+				width: max-content;
+			}
 			
+			.greetingdiv {
+				margin-top: 5px;
+			}
+
+			.pagetitlecontent, .greetingcontent {
+				
+			}
+
 			.pagetitlecontent:hover, .greetingcontent:hover {
-			    letter-spacing: 120%;
+			        letter-spacing: 1px;
 			}
 
 		</style>
@@ -50,12 +96,19 @@
 
 	<body>
 
-		<section class="container">
-   			<div class="pagetitle">
+		<ul class="navmain">
+			<li><a href="pages/page1.html">Page 1</a></li>
+			<li><a href="pages/page2.html">Page 2</a></li>
+			<li><a href="pages/page3.html">Page 3</a></li>
+			<li><a href="pages/page4.html">Page 4</a></li>
+		</ul>
+
+		<section class="hometitle">
+   			<div class="pagetitlediv">
 				<h1 class="pagetitlecontent">Plot's Synposis</h1>
 			</div> 
-			<div class="greeting">
-     				 <h2 class="greetingcontent">Greetings. I'm David.</h2>
+			<div class="greetingdiv">
+     				 <h2 class="greetingcontent">Greetings. I'm Daft.</h2>
   			</div>
 		</section>
 
