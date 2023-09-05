@@ -16,11 +16,15 @@
 				color: yellow;
 				font-family: "Orbitron", sans-serif; 
 				overflow-wrap: normal;
+				
+;
 			}
+			
+
 			
 			ul {
  				 list-style-type: none;
- 				 margin: 0;
+ 				 margin-left: 50px;
  			 	 padding: 0;
  				 overflow: hidden;
  				 background-color: none;
@@ -29,75 +33,75 @@
 
 			li {
   				float: left;
-				margin-left: 1.5%;
+				
 			}
 
 			li a {
 				display: block;
-  				
   				text-align: center;
   				padding: 14px 16px;
   				text-decoration: none;
 			}
 
-			/* Change the link color to #111 (black) on hover */
+
 			li a:hover {
-  				background-color: #111;
+				
+				/* stretch text horizontally w/o interfering w/ other inline blocks */
+					-webkit-transform:scale(1.1,1); /* Safari and Chrome */
+					-moz-transform:scale(1.1,1); /* Firefox */
+					-ms-transform:scale(1.1,1); /* IE 9 */
+					-o-transform:scale(1.1,1); /* Opera */
+					transform:scale(1.1,1); /* W3C */
 			}
 
-			a:hover {
-				letter-spacing: 1px;
-				text-decoration: underline;
-			}
-							
 			body {
 				background-image: url("https://wallpaper.dog/large/5525605.jpg");
 				background-repeat: no-repeat;
 				background-attachment: fixed;
  				background-position: center; /* Center the image */
  				background-size: cover; /* Resize the background image to cover the entire container */
-		
 				
-			}
-	
 				
+			}		
 			
-			.pagetitlediv,.greetingdiv {
-			  	text-align: left;
-			        margin-left: 2%;
-			      
-			}
-				
-			.pagetitlediv {
-			        font-size: 52px;
-			        margin-top: 1.5%;
+			
+			.pgttle.div {
+			    font-size: 85px;
+				margin-left: 50px;
+				margin-top: 25px;	
 			}
 			
-			.greetingdiv {
-			        font-size: 18px;
+			.grtng.div {
+				font-size: 18px;
 				font-style: italic;
+				margin-top: 10px;
+				margin-left: 500px;
+
 			}
 			
-			.pagetitlediv, .greetingdiv {
-				
-				
+			.pgttle.grtng, .div {
 				width: max-content;
+				text-align: left;
 			}
 			
-			.greetingdiv {
-				margin-top: 5px;
+			
+			.pgttle.span {
+				text-transform: uppercase;
+				white-space: normal;
 			}
-
-			.pagetitlecontent, .greetingcontent {
+			
+			.page {
+				width: 100%;
+				height: 100%;
+				
 				
 			}
-
 			
 		</style>
 	</head>
 
-	<body>
-
+	
+	<div class="page">
 		<ul class="navmain">
 			<li><a href="pages/page1.html">Page 1</a></li>
 			<li><a href="pages/page2.html">Page 2</a></li>
@@ -106,13 +110,14 @@
 		</ul>
 
 		<section class="hometitle">
-   			<div class="pagetitlediv">
-				<h1 class="pagetitlecontent">Plot's Synposis</h1>
+			<div class="pgttle div">
+				<span class="pgttle span">Daft's Last Laugh</span>
 			</div> 
-			<div class="greetingdiv">
-     				 <h2 class="greetingcontent">Greetings. I'm Daft.</h2>
-  			</div>
+			<div class="grtng div">
+				<span class="grtng span">Greetings, I'm Daft.</span>
+			</div>
 		</section>
-
-	</body>
+	</div>
+	
 </html>
+
